@@ -69,7 +69,7 @@ if places is not None:
             with t_cols[i]:
                 st.success(f"**{p_name}**")
                 st.caption(f"📍 {trending_selection.iloc[i]['City']}")
-                st.write(f"⭐ {trending_selection.iloc[i]['Google review rating']} | 🎭 {trending_selection.iloc[i]['Type']}")
+                st.write(f"⭐ {trending_selection.iloc[i]['Google review rating']}")
                 # Button updates the state directly
                 st.button("Explore", key=f"tr_{i}", on_click=on_button_click, args=(p_name,))
 
